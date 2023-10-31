@@ -10,9 +10,6 @@ from hack_9 import fn_hack_9
 from hack_10 import fn_hack_10
 #
 import pytest
-
-
-
 # hack-1
 @pytest.mark.parametrize(
     "input,expected",
@@ -98,7 +95,7 @@ def test_hack_6(input, expected):
     "input,expected",
     [
      (fn_hack_7(["a","b","c","d","e"]),["1",2,"3",4,"5"]),
-     (fn_hack_7([0]), [0] ),
+     (fn_hack_7([]), [0] ),
     ]
 )
 def test_hack_7(input, expected):
@@ -139,4 +136,3 @@ def test_hack_9(input, expected):
 )
 def test_hack_10(input, expected):
     assert input == expected
-
